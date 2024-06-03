@@ -1,0 +1,43 @@
+new-project script 472 314
+add-layer Layer1 
+add-image-to-layer Layer1 parrot.ppm 0 0
+set-filter Layer1 normal
+add-layer Layer2 
+add-image-to-layer Layer2 parrotfeather.png 44 0
+set-filter Layer2 brighten-intensity
+add-layer Layer3
+add-image-to-layer Layer3 parrotfeather.png 88 0
+set-filter Layer3 darken-luma
+add-layer Layer4
+add-image-to-layer Layer4 parrotfeather.jpg 132 0
+set-filter Layer4 brighten-value
+add-layer Layer5
+add-image-to-layer Layer5 parrotfeather.jpg 176 0
+set-filter Layer5 darken-value
+add-layer Layer6
+add-image-to-layer Layer6 parrotfeather.jpg 220 0
+set-filter Layer6 brighten-luma
+add-layer Layer7
+add-image-to-layer Layer7 parrotfeather.jpg 264 0
+set-filter Layer7 darken-intensity
+add-layer Layer8
+add-image-to-layer Layer8 parrotfeather.jpg 0 236
+set-filter Layer8 brighten-blend
+add-layer Layer9
+add-image-to-layer Layer9 parrotfeather.png 52 236
+set-filter Layer9 red-component
+add-layer Layer10
+add-image-to-layer Layer10 parrotfeather.png 104 236
+set-filter Layer10 darken-blend
+add-layer Layer11
+add-image-to-layer Layer11 parrotfeather.jpg 156 236
+set-filter Layer11 green-component
+add-layer Layer12
+add-image-to-layer Layer12 parrotfeather.jpg 208 236
+set-filter Layer12 difference
+add-layer Layer13
+add-image-to-layer Layer13 parrotfeather.jpg 260 236
+set-filter Layer13 blue-component
+save-image scriptJPG.jpg
+save-project newscriptJPG.collage
+quit
